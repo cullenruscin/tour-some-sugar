@@ -42,27 +42,27 @@ const database = {
         id: 1,
         bandId: 2,
         venueId: 3,
-        date: 20231118,
+        date: new Date('11/18/2023'),
     },{
         id: 2,
         bandId: 2,
         venueId: 2,
-        date: 20231118,
+        date: new Date('05/05/2023'),
     },{
         id: 3,
         bandId: 1,
         venueId: 2,
-        date: 20230808,
+        date: new Date('08/13/2023'),
     },{
         id: 4,
         bandId: 1,
         venueId: 1,
-        date: 20230808,
+        date: new Date('11/10/2023'),
     },{
         id: 5,
         bandId: 3,
         venueId: 3,
-        date: 20230422,
+        date: new Date('11/18/2023'),
     }]
 }
 

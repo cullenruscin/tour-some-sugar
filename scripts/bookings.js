@@ -31,7 +31,8 @@ export const Bookings = () => {
     for (const booking of bookings) {
         const band = findBand(booking, bands)
         const venue = findVenue(booking, venues)
-        html += `<li id="booking--${booking.id}">${band.name} are playing at ${venue.name} on ${booking.date}</li>`
+        const date = booking.date.toLocaleDateString('en-US')
+        html += `<li id="booking--${booking.id}">${band.name} are playing at ${venue.name} on ${date}</li>`
     }
     html += '</ul>'
     return html
