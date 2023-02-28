@@ -44,6 +44,7 @@ Bookings.js
 */
 
 import { Bands } from "./bands.js"
+import { Venues } from "./venues.js"
 
 const mainContainer = document.querySelector('#container')
 
@@ -54,6 +55,7 @@ const applicationHTML = `
 </article>
 <article class="venues">
     <h2>Venues</h2>
+    ${Venues()}
 </article>
 <article class="bands">
     <h2>Bands</h2>
