@@ -1,0 +1,9 @@
+#flex {
+    display: flex;
+}
+
+article {
+    border: 1px black solid;
+    padding: 10px;
+    margin: 10px;
+}

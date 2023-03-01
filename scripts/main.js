@@ -55,6 +55,7 @@ const applicationHTML = `
     <h2>Bookings</h2>
     ${Bookings()}
 </article>
+<div id="flex">
 <article class="venues">
     <h2>Venues</h2>
     ${Venues()}
@@ -63,6 +64,7 @@ const applicationHTML = `
     <h2>Bands</h2>
     ${Bands()}
 </article>
+</div>
 `
 
 mainContainer.innerHTML = applicationHTML
