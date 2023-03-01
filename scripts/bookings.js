@@ -25,6 +25,19 @@ const findVenue = (booking, venues) => {
     return bookingVenue
 }
 
+document.addEventListener('click', e => {
+    const itemClicked = e.target
+    if (itemClicked.id.startsWith('booking')) {
+        const [, bookingId] = itemClicked.id.split('--')
+        for (const booking of bookings) {
+            if (booking.id === parseInt(bookingId)) {
+                let band = findBand(booking, bands)
+                window.alert(`${band.name} is a ${band.memberCount} person ${band.genre} band formed in ${band.foundingDate}.`)
+            }
+        }
+    }
+})
+
 export const Bookings = () => {
     let html = '<ul>'
     for (const booking of bookings) {
