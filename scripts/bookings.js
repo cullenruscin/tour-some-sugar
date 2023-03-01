@@ -25,7 +25,6 @@ const findVenue = (booking, venues) => {
     return bookingVenue
 }
 
-//"Rocket Pumpkins are playing at The Cellar Moss on 12/13/2023"
 export const Bookings = () => {
     let html = '<ul>'
     for (const booking of bookings) {
