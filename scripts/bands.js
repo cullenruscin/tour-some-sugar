@@ -6,8 +6,6 @@ const bands = getBands()
 const venues = getVenues()
 const bookings = getBookings()
 
-//When clicked, alert should show all the venues the band is playing
-
 const bandVenues = band => {
     let venuesBooked = []
     for (const booking of bookings) {
